@@ -1,0 +1,26 @@
+.container{
+    text-align: center;
+    margin-left: 8%;
+    margin-right:8%;
+}
+.search-mid{
+    background-color: rgb(209, 210, 206);
+    width: 1220px; 
+}
+input{
+    width: 287px;
+    margin: 3px;
+}
+.ortala{
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+}
+a{
+    text-align: center;
+}
+table{
+    margin: auto;
+}
+
+
