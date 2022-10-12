@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html,
+        body {
+            margin: 0px;
+            width: 100%;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            background-image: url("zeminresmi.jpg");
+        }
+
+        #score_board {
+            background-color: cornflowerblue;
+            width: 20%;
+            height: 150px;
+            padding-left: 20px;
+            border-radius: 10px;
+            position: absolute;
+            right: 10px;
+            display: none;
+        }
+
+        #dybaslik {
+            text-align: left;
+            float: left;
+            margin-right: 100px;
+        }
+
+        #score_board #puan {
+            font-size: 2em;
+            text-align: center;
+            float: left;
+            display: flex;
+            justify-content: space-between;
+            margin-right: 50px;
+        }
+
+        #toplampuan {
+            margin-left: 90px;
+        }
+
+        #sorular {
+            margin-left: 100px;
+            background-color: #406882;
+            width: 70%;
+            height: 50%;
+            position: absolute;
+            top: 28%;
+            border-radius: 20px;
+            box-shadow: 5px 10px black;
+            padding: 15px 15px;
+            display: none;
+        }
+
+        #soru_metni {
+            font-size: 2em;
+            margin-top: 1%;
+            background-color: #B1D0E0;
+            border-radius: 20px;
+            width: 90%;
+            height: 50%;
+            padding: 2%;
+            margin: auto;
+            box-shadow: 0px 0px 10px inset darkcyan;
+            text-align: center;
+        }
+
+        #cevaplar {
+            padding-top: 10px;
+            text-align: center;
+            margin-top: 10px;
+            display: grid;
+            grid-template-columns: auto auto;
+        }
+
+        #a_sikki,
+        #b_sikki,
+        #c_sikki,
+        #d_sikki {
+            padding: 5px;
+            margin: 5px;
+            background-color: #5998AB;
+            border-radius: 10px;
+            font-size: 1.1em;
+            line-height: 1.1em;
+        }
+
+        .baslamabutonu {
+            margin: auto;
+            background-color: #406882;
+            border-radius: 50px;
+            text-align: center;
+            width: 30%;
+            height: 50%;
+            font-size: 2em;
+            position: absolute;
+            top: 40%;
+            left: 40%;
+        }
+
+        .baslamabutonu:hover {
+            background-color: antiquewhite;
+            color: #406882;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="score_board">
+        <div id="dybaslik">Doğru Sayısı : </div>
+        <div id="dogrusayisi">-</div>
+        <div id="dybaslik">Yanlış Sayısı : </div>
+        <div id="yanlissayisi">-</div>
+        <div id="puan">PUAN :<span id="toplampuan">-</span></div>
+    </div>
+
+    <div id="sorular">
+        <div id="soru_metni">Soru Metni</div>
+        <div id="cevaplar">
+            <div id="a_sikki" data-secim="A" onclick="cevaplandi(this)">A) </div>
+            <div id="b_sikki" data-secim="B" onclick="cevaplandi(this)">B) </div>
+            <div id="c_sikki" data-secim="C" onclick="cevaplandi(this)">C) </div>
+            <div id="d_sikki" data-secim="D" onclick="cevaplandi(this)">D) </div>
+        </div>
+    </div>
+    <button class="baslamabutonu" onclick="soruGetir(0)">Yarışmaya Başla</button>
+    <script src="bilgiyarismasi.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</body>
+
+</html>
