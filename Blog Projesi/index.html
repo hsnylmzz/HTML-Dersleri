@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Sitem</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <style>
+        .nav-link.active {
+            color: red !important;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Hasan Yılmaz</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav fw-bold">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#home">Ana Sayfa</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">Hakkımda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">Projelerim</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">İletişim</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <section class="min-vh-100 d-flex flex-column justify-content-end align-items-center" id="home"
+        style="background-image:url('frontend.jpg'); background-size: cover;">
+        <div class="text-center">
+            <p class="fw-bolder display-3 mb-3" style="color: red;">Hasan Yılmaz</p>
+            <h6 class="fs-3 text-secondary mb-4">Frontend Developer and Full Stack Developer</h6>
+        </div>
+        <a href="#about" class="btn btn-info mb-2">Hakkımda</a>
+    </section>
+
+    <section class="container py-5" id="about">
+        <div class="text-center py-5">
+            <h2 class="fw-bolder">HAKKIMDA</h2>
+            <p>Karadeniz Teknik Üniversitesi Bilgisayar Mühendisliğinden 2020 yılında mezun oldum.
+                Eğitim hayatım boyunca elde ettiğim teorik bilgilerimi profesyonel kariyerimde pratiğe dökmeyi
+                hedefliyorum, yeteneklerimi sergileyebileceğim aktif bir iş arayışındayım.
+                Frontend Developer ve Full Stack Developer üzerinde proje geliştiriyorum.
+            </p>
+        </div>
+        <div class="row">
+            <div class="col-lg-4">
+                <img src="developer.jpg" class="h-100">
+            </div>
+            <div class="col-lg-7 offset-lg-1">
+                <p class="lh-lg">Sergilediğim yeteneklerimi aşağıda verdim.</p>
+                <h3 class="fw-bold fs-4">Yetenekler</h3>
+                <p class="mb-0">HTML</p>
+                <div class="progress mb-1">
+                    <div class="progress-bar" role="progressbar" aria-label="Basic example" style="width: 95%;">%95
+                    </div>
+                </div>
+                <p class="mb-0">CSS</p>
+                <div class="progress mb-1">
+                    <div class="progress-bar" role="progressbar" aria-label="Basic example" style="width: 75%">%75</div>
+                </div>
+                <p class="mb-0">Javascript</p>
+                <div class="progress mb-1">
+                    <div class="progress-bar" role="progressbar" aria-label="Basic example" style="width: 80%">%80</div>
+                </div>
+                <p class="mb-0">C#</p>
+                <div class="progress mb-1">
+                    <div class="progress-bar" role="progressbar" aria-label="Basic example" style="width: 75%">%75</div>
+                </div>
+                <p class="mb-0">Java</p>
+                <div class="progress mb-1">
+                    <div class="progress-bar" role="progressbar" aria-label="Basic example" style="width: 60%">%60</div>
+                </div>
+                <p class="mb-0">Python</p>
+                <div class="progress mb-1">
+                    <div class="progress-bar" role="progressbar" aria-label="Basic example" style="width: 95%">%95</div>
+                </div>
+                <p class="mb-0">Angular</p>
+                <div class="progress mb-1">
+                    <div class="progress-bar" role="progressbar" aria-label="Basic example" style="width: 40%">%40</div>
+                </div>
+                <p class="mb-0">React</p>
+                <div class="progress mb-1">
+                    <div class="progress-bar" role="progressbar" aria-label="Basic example" style="width: 40%">%40</div>
+                </div>
+                <p class="mb-0">Net Core</p>
+                <div class="progress mb-1">
+                    <div class="progress-bar" role="progressbar" aria-label="Basic example" style="width: 30%">%30</div>
+                </div>
+                <p class="mb-0">Asp.Net</p>
+                <div class="progress mb-1">
+                    <div class="progress-bar" role="progressbar" aria-label="Basic example" style="width: 60%">%60</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="projects" class="bg-dark py-5">
+        <div class="container">
+            <div class="text-white text-center py-5">
+                <h2 class="fw-bolder py-3">Projelerim</h2>
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <img src="angular.png" class="img-fluid img-thumbnail">
+                        <p class="mt-2">Makale Oluşturma Projesi</p>
+                    </div>
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <img src="angular.png" class="img-fluid img-thumbnail">
+                        <p class="mt-2">Şehir Rehberi</p>
+                    </div>
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <img src="netcore.png" class="img-fluid img-thumbnail">
+                        <p class="mt-2">Düğün Davetiye Projesi</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="bg-dark py-5">
+        <div class="container">
+            <div class="text-white text-center py-5">
+                <h2 class="fw-bolder">İletişim</h2>
+            </div>
+        </div>
+        <div class="col-xxl-6 col-xl-7 col-lg-8 col-md-9 col-sm-10 col-11 mx-auto">
+            <form class="text-white">
+                <div class="mb-3">
+                    <label class="form-label">Ad Soyad</label>
+                    <input type="text" class="form-control">
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Mail</label>
+                    <input type="email" class="form-control">
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Konu</label>
+                    <input type="text" class="form-control">
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Mesajınız</label>
+                    <textarea type="text" class="form-control" rows="10"></textarea>
+                </div>
+                <button class="btn btn-primary btn-lg">Gönder</button>
+            </form>
+        </div>
+    </section>
+    <footer class="bg-light">
+        <div class="text-center">
+            <p class="fs-5 py-3 mb-0">@2022 Hasan Yılmaz Tüm Hakları Saklıdır</p>
+        </div>
+    </footer>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
